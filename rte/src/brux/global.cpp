@@ -1,5 +1,6 @@
 //  Brux - Globals
 //  Copyright (C) 2016 KelvinShadewing
+//  Copyright (C) 2023 hexaheximal
 //
 //  This program is free software: you can redistribute it and/or modify
 //  it under the terms of the GNU Affero General Public License as published by
@@ -45,18 +46,17 @@ Uint32 gvTickLast = 0;
 float gvFPS = 0;
 Uint32 gvMaxFPS = 60;
 Uint32 gvFrames = 0;
-const char *gvVNo = "v.0.3.0";
+const char *gvVNo = "v.0.3.1";
 const float pi = 3.14159265f;
 bool gvClearScreen = 1;
 SDL_Event Event;
 std::vector<SDL_Texture*> vcTextures;
+std::vector<std::string> vcTextureNames;
 bool gvDebug = 1;
 std::vector<xySprite*> vcSprites;
 std::vector<xyFont*> vcFonts;
 Uint32 gvBackColor;
 Uint32 gvDrawColor;
-std::vector<Mix_Chunk*> vcSounds;
-std::vector<Mix_Music*> vcMusic;
 std::string gvAppDir;
 std::string gvWorkDir;
 const Uint8 *sdlKeys;
